@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المزيد</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f6f6f6;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+            text-align: right;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #f6f6f6;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background-color: #e9e9d5;
+            border-bottom: 1px solid #ddd;
+            border-radius: 0 0 20px 20px;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+            color: #5b5b5b;
+            font-weight: bold;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 24px;
+            color: #5b5b5b;
+            cursor: pointer;
+        }
+
+        .content {
+            padding: 20px;
+            flex-grow: 1;
+            overflow-y: auto;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .join-specialist {
+            background-color: #e9e9d5;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .join-specialist button {
+            background-color: #a7a27c;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .join-specialist button:hover {
+            background-color: #99987a;
+        }
+
+        .support-links {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .support-links:hover {
+            background-color: #f1f1f1;
+        }
+
+        .support-links img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .logout {
+            color: red;
+            font-size: 16px;
+            padding: 10px 0;
+            margin-bottom: 20px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .delete-account {
+            text-align: center;
+            color: #777;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .bottom-nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #f6f6f6;
+            border-top: 1px solid #ddd;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            max-width: 400px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .bottom-nav a {
+            color: #777;
+            text-decoration: none;
+            font-size: 12px;
+        }
+
+        .bottom-nav img {
+            width: 20px;
+            height: 20px;
+            margin-bottom: 5px;
+        }
+               /* Footer styles */
+               footer {
+            background-color: #d5dcc5;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+        }
+
+        footer img {
+            width: 24px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #666;
+            font-size: 14px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        footer a:hover {
+            color: #333;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+       
+        <div class="back-button">←</div>
+
+        <div class="content">
+            <div class="join-specialist">
+                انضم كمتخصص<br>
+                <p>انضم لأطمئن كمتخصص وقدم مساعدتك لمن يحتاجها</p>
+                
+            </div>
+
+            <div class="support-links">
+                <span>مساعدة</span>
+                <span>Rana@gmail.com</span>
+                <img src="help-icon.png" alt="مساعدة">
+            </div>
+
+            <div class="support-links">
+                <span>أرقام مهمة   </span>
+                <span>+966 53 752 0274    </span>
+                <img src="numbers-icon.png" alt="أرقام مهمة">
+            </div>
+
+       
+        </div>
+    </div>
+
+ <!-- Footer Section -->
+ <footer>
+    <a href="firstpage.html">
+        <img src="home_icon.png" alt="home"> <!-- Replace with home icon -->
+        <span>اطمئن</span>
+    </a>
+
+    <a href="12.html">
+        <img src="calendar_icon.png" alt="calendar"> <!-- Replace with calendar icon -->
+        <span>المواعيد</span>
+    </a>
+
+    <a href="14.html">
+        <img src="plan_icon.png" alt="plan"> <!-- Replace with plan icon -->
+        <span>الخطة العلاجية</span>
+    </a>
+
+    <a href="16.html">
+        <img src="chat_icon.png" alt="chat"> <!-- Replace with chat icon -->
+        <span>المحادثات</span>
+    </a>
+
+    <a href="17.html">
+        <img src="more_icon.png" alt="more"> <!-- Replace with more icon -->
+        <span>الملف الشخصي</span>
+    </a>
+</footer>
+
+</body>
+</html>

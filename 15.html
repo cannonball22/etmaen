@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الخطط العلاجية</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f6f6f6;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            direction: rtl;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            margin: 20px auto;
+            background-color: #f6f6f6;
+            border-radius: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+        }
+
+        .header {
+            font-size: 24px;
+            color: #5b5b5b;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .plan-card {
+            background-color: #f6f6f6;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .plan-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .plan-subtitle {
+            color: #888;
+            margin-top: 5px;
+            font-size: 14px;
+        }
+
+        .plan-description {
+            font-size: 14px;
+            color: #555;
+            margin: 20px 0;
+            text-align: justify;
+        }
+
+        .stage {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .stage-title {
+            font-size: 16px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .stage-icon {
+            color: #999;
+            font-size: 20px;
+        }
+
+        .join-btn {
+            background-color: #a7a27c;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 30px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 15px;
+        }
+
+        .join-btn:hover {
+            background-color: #99987a;
+        }
+
+        .bottom-nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #f6f6f6;
+            border-top: 1px solid #ddd;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            max-width: 400px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .bottom-nav a {
+            color: #777;
+            text-decoration: none;
+            font-size: 12px;
+        }
+
+        .bottom-nav img {
+            width: 20px;
+            height: 20px;
+            margin-bottom: 5px;
+        }
+
+        .locked {
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">الخطط العلاجية</div>
+
+        <div class="plan-card">
+            <div class="plan-title">التعافي من الاكتئاب</div>
+            <div class="plan-subtitle">3 مراحل - 245 مسجل</div>
+
+            <div class="plan-description">
+                هذه الخطة تتكون من عدة مراحل متتالية وتساعدك على التغلب على أعراض الاكتئاب، وتحسين جودة حياتك بشكل تدريجي. الهدف هو تقليل الأعراض النفسية وتعزيز الرفاهية النفسية.
+            </div>
+
+            <div class="stage locked">
+                <div class="stage-title">مرحلة التكيف و الوقاية</div>
+                <div class="stage-icon">🔒</div>
+            </div>
+            <div class="stage locked">
+                <div class="stage-title">مرحلة الوعي بالاكتئاب</div>
+                <div class="stage-icon">🔒</div>
+            </div>
+            <div class="stage">
+                <div class="stage-title">مرحلة علاج أعراض الاكتئاب</div>
+                <div class="stage-icon">🔓</div>
+            </div>
+
+            <button class="join-btn">انضم الآن</button>
+        </div>
+    </div>
+
+    <div class="bottom-nav">
+        <a href="#"><img src="chat.png" alt="المحادثة"><br>المحادثة</a>
+        <a href="#"><img src="plan.png" alt="الخطط العلاجية"><br>الخطط العلاجية</a>
+        <a href="#"><img src="rules.png" alt="القواعد"><br>القواعد</a>
+        <a href="#"><img src="more.png" alt="المزيد">  <span>الملف الشخصي</span>
+    </div>
+
+</body>
+</html>

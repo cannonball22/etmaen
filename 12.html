@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مواعيدي</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+    
+    body {
+      background-color: #F8F8F4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 500px;
+      background-color: #FFFFFF;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Centers the content vertically and horizontally */
+      position: relative;
+    }
+
+    h1 {
+      text-align: right;
+      color: #5A5A5A;
+      font-size: 24px;
+      margin-bottom: 20px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .back-arrow {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .no-results {
+      text-align: center;
+      color: #5A5A5A;
+      margin-bottom: 20px;
+    }
+
+    .no-results img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 10px;
+    }
+
+    .no-results p {
+      font-size: 14px;
+      color: #888;
+    }
+
+    .book-btn {
+      width: 100%;
+      background-color: #AFAB91;
+      color: #FFF;
+      padding: 15px;
+      text-align: center;
+      border-radius: 10px;
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+
+    .status-buttons {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+    }
+
+    .status-buttons button {
+      background-color: #F2F2EA;
+      color: #5A5A5A;
+      border: none;
+      border-radius: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .status-buttons button.active {
+      background-color: #AFAB91;
+      color: #FFF;
+    }
+
+    /* Bottom Navigation Bar */
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #F2F2EA;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+      border-top: 1px solid #DDD;
+    }
+
+    .bottom-nav button {
+      background: none;
+      border: none;
+      font-size: 14px;
+      color: #888;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .bottom-nav button.active {
+      color: #AFAB91;
+    }
+
+    .bottom-nav img {
+      width: 25px;
+      height: 25px;
+      margin-bottom: 5px;
+    }
+
+    .bottom-nav span {
+      font-size: 12px;
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #d5dcc5;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    }
+
+    footer img {
+      width: 24px;
+    }
+
+    footer a {
+      text-decoration: none;
+      color: #666;
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    footer a:hover {
+      color: #333;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <span class="back-arrow" onclick="window.location.href='11.html';">←</span>
+  <h1>مواعيدي</h1>
+  
+  <div class="no-results">
+    <img src="https://cdn-icons-png.flaticon.com/512/747/747310.png" alt="Calendar Icon">
+    <p>لا توجد نتائج</p>
+    <p>لا توجد نتائج متاحة في هذه اللحظة. يرجى التحقق لاحقًا أو احجز موعد جديد بالضغط فوق "احجز موعد".</p>
+  </div>
+  
+  <button class="book-btn" onclick="window.location.href='13.html';">احجز موعدك</button>
+  
+  <div class="status-buttons">
+    <button class="active">الجارية</button>
+    <button>المكتملة</button>
+  </div>
+</div>
+
+ <!-- Footer Section -->
+ <footer>
+  <a href="firstpage.html">
+      <img src="home_icon.png" alt="home"> <!-- Replace with home icon -->
+      <span>اطمئن</span>
+  </a>
+
+  <a href="12.html">
+      <img src="calendar_icon.png" alt="calendar"> <!-- Replace with calendar icon -->
+      <span>المواعيد</span>
+  </a>
+
+  <a href="14.html">
+      <img src="plan_icon.png" alt="plan"> <!-- Replace with plan icon -->
+      <span>الخطة العلاجية</span>
+  </a>
+
+  <a href="16.html">
+      <img src="chat_icon.png" alt="chat"> <!-- Replace with chat icon -->
+      <span>المحادثات</span>
+  </a>
+
+  <a href="17.html">
+      <img src="more_icon.png" alt="more"> <!-- Replace with more icon -->
+      <span>الملف الشخصي</span>
+  </a>
+</footer>
+
+</body>
+</html>
